@@ -1,7 +1,9 @@
 package example;
 
 import interfaces.OneDimensionalShape;
+import interfaces.ThreeDimensionalShape;
 import interfaces.TwoDimensionalShape;
+import shapes.Cube;
 import shapes.Line;
 import shapes.Square;
 
@@ -18,6 +20,11 @@ public class MainExample {
 		ShapeHolderAdapter<TwoDimensionalShape> shape_2 = new ShapeHolderAdapter<TwoDimensionalShape>(square);
 		
 		System.out.println(shape_2.getShape().returnShape());
+		
+		Cube cube = new Cube();
+		ShapeHolderAdapter<ThreeDimensionalShape> shape_3 = new ShapeHolderAdapter<ThreeDimensionalShape>(cube);
+		
+		System.out.println(shape_3.getShape().returnShape());
 	}
 	
 }
