@@ -8,7 +8,6 @@ public class ShapeHolderAdapter<Type> {
 		this.element = element;
 	}
 	
-	
 	public Type getShape() {
 		return element;
 	}
@@ -16,5 +15,4 @@ public class ShapeHolderAdapter<Type> {
 	public void setShape(Type element) {
 		this.element = element;
 	}
-	
 }
